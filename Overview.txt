@@ -1,0 +1,40 @@
+Building a web app to manage users who work on taking updates from the declined insurance claims of patients.
+
+Peoject workflow or details
+There are different types of users like admin(manager) and users(employees).
+Manager uploads an excel sheets of claims with various columns. The claims are then rendered in a table format. Manager can select the user from the dropdown list of all users on top right. At the botton of the screen there will be Assign button which assigns all the claims to that sellected user.
+
+A dashboard screen with various filters on top row, various graphs to moniter users performance on how many claims are addressed in a day/week/month in the middle of the screen and all the claims based on the filter selected with pagination.
+
+A details section where both user and manager can view individual claim details.
+
+User will need to select status and action dropdown and add comments(there cal also be chain of comments).
+They can either submit or snooze(will select snooze date). 
+Submit will complete the case.
+Snooze will also complete the case but will send a reminder email to the user to take action on the selected date)
+status, action and comments will go uneditable once a case is submitted.
+
+Database
+Users and claims, claims_history(to archive past data)
+
+
+Frontend
+Assign page:
+	Admin: File upload, assign page.
+
+Dashboard page:
+	Admin: Monitor users performance
+	User: Self assesment their own performance
+	
+Details page:
+Will show all the details of claims in an uneditable way except the status, action and comments.  
+Everyone have access to this page.
+
+
+Backend
+API's to read excel, insert and update claims, retreve details from database.
+
+
+
+
+
